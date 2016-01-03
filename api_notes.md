@@ -3,11 +3,24 @@
 |Series|IMDb ID|Dates|Seasons|
 ```
 tos = '0060028', '66'-'69', 3
-tng : '0092455', '87'-'94', 7
 ani : '0069637', '73'-'75', 1
+Star Trek: The Motion Picture (1979) 0079945
+Star Trek II: The Wrath of Khan (1982) 0084726
+Star Trek III: The Search for Spock (1984) 0088170
+Star Trek IV: The Voyage Home (1986) 0092007
+tng : '0092455', '87'-'94', 7
+Star Trek V: The Final Frontier (1989) 0098382
+Star Trek VI: The Undiscovered Country (1991) 0102975
+Star Trek: Generations (1994) 0111280
 ds9 : '0106145', '93'-'99', 7
 voy : '0112178', '95'-'01', 7
+Star Trek: First Contact (1996) 0117731
+Star Trek: Insurrection (1998) 0120844
 ent : '0244365', '01'-'05', 4
+Star Trek: Nemesis (2002) 0253754
+Star Trek (2009) tt0796366
+Star Trek Into Darkness (2013) 1408101
+Star Trek Beyond (2016) 2660888
 ```
 # IMDbPY  
 - Source - http://sourceforge.net/p/imdbpy/  
@@ -17,39 +30,19 @@ ent : '0244365', '01'-'05', 4
 
 #Hulu ?
 - Source - https://github.com/michaelhelmick/hulu
-import imdb
-import time as t
-import numpy as np
-import pandas as pd
 
-tos = '0060028', '66'-'69', 'done'
-tng = '0092455', '87'-'94', 'done'
-ani = '0069637', '73'-'75', 'done'
-ds9 = '0106145', '93'-'99', 'done'
-voy = '0112178', '95'-'01', 'done'
-ent = '0244365', '01'-'05', ''
-ia = imdb.IMDb()
-tng = ia.get_movie('0092455')
-# returns dict with {season: ep_1, ep_2, .., ep_n}
-ia.update(tng, 'episodes')
-seasons = tng['episodes']
+Shows and Movies  
+First 4 Movies all premiered before TNG and after TOS/ANI   
+  - Fans wanted more after first two series  
 
-season_1 = seasons[1]
-season_2 = seasons[2]
-season_3 = seasons[3]
-season_4 = seasons[4]
-season_5 = seasons[5]
-season_6 = seasons[6]
-season_7 = seasons[7]
+5, 6 & Generations Premiered during TNG's Airing Dates  
+  - Aging fans still wanted more adventures from TOS  
+  - Untested TNG movie entrance into market   
 
-ratings = {}
-for key, value in season_1.iteritems():
-    ia.update(value)
-    ratings[key] = value.get('rating')
+DS9 & VOY aired simultaneously during 95-99  
+  - During which time the movies Star Trek: First Contact (TNG) and Insurrection (TNG) premiered  
 
-for key, value in ratings.iteritems():
-    print key, value
+Nemesis premiered during ENT's airing time  
+  - Both movie and series considered a flop  
 
-#for key, value in season_1.iteritems():
-#    ia.update(value)
-#    print value.get('rating')
+'Abramsverse' Aired outside of a TV series  
