@@ -46,3 +46,25 @@ Nemesis premiered during ENT's airing time
   - Both movie and series considered a flop  
 
 'Abramsverse' Aired outside of a TV series  
+
+
+OTHER Shows
+Doctor Who
+90s
+- X-Files 0106179
+- Seaquest 0106126
+- Babylon 5 0105946
+- Outer Limits 0112111
+- Sliders 0112167
+- Stargate SG1 0118480
+80s
+- V 0086822
+- Galactica 1980 0080221
+- Droids (animated) 0088510
+- Ewoks 0088515
+- Twilight Zone 0088634
+- Quantum Leap 0096684
+
+
+late 00s
+- Battlestar Galactica 0407362
